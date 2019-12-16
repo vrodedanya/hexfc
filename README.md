@@ -8,7 +8,7 @@ Hex editor for console
 2. `$make install`
 
 ### Guide:
-hexfc <path> -[flags]
+hexfc [path] -[flags]
 
 Some flags:
   - 'hex'- output in the hex form
