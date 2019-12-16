@@ -1,8 +1,9 @@
 # hexfc
-###Description:
+
+### Description:
 Hex editor for console
 
-###Installation on linux:
+### Installation on linux:
 1. Download repository
 2. `$make install`
 
