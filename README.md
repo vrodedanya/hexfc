@@ -9,6 +9,7 @@ Hex editor for console
 
 ### Guide:
 hexfc <path> -[flags]
+
 Some flags:
   - 'hex'- output in the hex form
   - 'sym'- output in the form of symbols
