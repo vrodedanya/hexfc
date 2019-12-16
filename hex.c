@@ -10,6 +10,7 @@ int main(int argc, char* argv[])
 		if ((f = fopen(argv[1],"rb+")) == NULL)
 		{
 			fprintf(stderr,"Opening file error!\n");
+			return 0;
 		}
 		while(!feof(f))
 		{
@@ -30,10 +31,16 @@ int main(int argc, char* argv[])
 				unsigned char sym;
 				fread(&sym, sizeof(char), 1, f);
 				printf("%d ", sym);
+			}	
+			else if (strcmp(argv[2],"-sym") == 0)
+			{	
+				char sym;
+				fread(&sym, sizeof(char), 1, f);
+				printf("%c", sym);
 			}
 			else
 			{
-				printf("Incorrect input!\n");
+				fprintf(stderr, "Incorrect input!\nhexfc <path> -flag\n");
 				return 0;
 			}
 		}
@@ -41,7 +48,7 @@ int main(int argc, char* argv[])
 	}
 	else
 	{
-		printf("Incorrect input!\n");
+		fprintf(stderr, "Incorrect input!\nhexfc <path> -flag\n");
 	}
 	return 0;
 }
