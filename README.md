@@ -4,11 +4,12 @@
 Hex editor for console
 
 ### Installation on linux:
+0. If you don't have gcc, install it
 1. Download repository
 2. `$make install`
 
 ### Guide:
-hexfc [path] -[flags]
+`$hexfc [path] -[flags]`
 
 Some flags:
   - 'hex'- output in the hex form
